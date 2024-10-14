@@ -1,0 +1,28 @@
+.list-item{
+    list-style-type: none;
+    width: 350px;
+    box-shadow: 1px 5px 12px rgb(150, 150, 150);
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 2px;
+    animation-name: slide-in;
+    animation-duration: 1s;
+}
+.list-item span{
+    font-weight: normal;
+}
+.list-item h4{
+    color: rgb(68, 10, 65);
+    font-size: 25px;
+    margin: 0px;
+}
+
+@keyframes slide-in{
+  from{
+    margin-left: -400px;
+  }
+  to{
+    margin-left: 0px;
+  }
+}

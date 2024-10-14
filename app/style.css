@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(14, 107, 107);
+    padding: 10px;
+    color: white;
+}
+header h1{
+    font-size: 2em;
+}
+nav{
+   transition: all 0.4s;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    color: white;
+}
+nav ul li a:hover{
+    background-color: rgb(77, 158, 131);
+}
+.banner{
+    background-image: url("/images/man_smoke.jpg");
+    width: 100%;
+    height: 700px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+      color: white;
+      background-color: rgba(75, 74, 74, 0.336);
+      padding: 100px;
+      text-align: center;
+}
+header button{
+    display: none;
+    background-color: transparent;
+    color: rgb(248, 253, 253);
+    padding: 12px;
+    border: 1px solid white;
+}
+
+
+
+@media (max-width:560px) {
+    header{
+        display: flex;
+    }
+nav ul{
+    display: block;
+}
+nav{
+    position: absolute;
+    left: 0px;
+    overflow: hidden;
+    top: 58px;
+    height: 0px;
+    background-color:  rgb(14, 107, 107);
+    width: 100%;
+}
+header button{
+    display: block;
+}
+}
