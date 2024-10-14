@@ -13,7 +13,7 @@ header{
     align-items: center;
     justify-content: space-between;
     background-color: rgb(14, 107, 107);
-    padding: 10px;
+    padding: 5px;
     color: white;
 }
 header h1{
@@ -44,11 +44,13 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-repeat: no-repeat;
+    background-color: black;
 }
 .banner h1{
       color: white;
       background-color: rgba(75, 74, 74, 0.336);
-      padding: 100px;
+      padding: 50px;
       text-align: center;
 }
 header button{
@@ -79,5 +81,13 @@ nav{
 }
 header button{
     display: block;
+}
+.banner{
+    height: 700px;
+    width: 100%;
+    background-position: top;
+}
+.banner h1{
+    padding: 20px;
 }
 }

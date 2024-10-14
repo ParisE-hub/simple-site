@@ -1,30 +1,25 @@
 "use client"
 import {useState} from "react"
 export default function Header() {
-   var[open,setOpen]=useState();
-   var[IsClick,setIsClicked]=useState(false);
+   var[open,setOpen]=useState("");
+   var[classIcon,setclassIcon]=useState("fa fa-bars");
    function handler() {
       if (open==0) {
         setOpen(160);
-        setIsClicked(true);
+        setclassIcon("fa fa-close");
     }
        else{ (setOpen(0))
-       setIsClicked(false);
+       setclassIcon("fa fa-bars");
        } 
    }
 
-   if (IsClick==false) {
-    var icon=<i className="fa fa-bars"></i>;
-    }
-    else { 
-        var icon=<i className="fa fa-close"></i>;
-    }
+
 
 
     return (
     <header>
         <h1>IDEaL Concepts</h1>
-        <button onClick={handler}>{icon}</button>
+        <button onClick={handler}><i className={classIcon}></i></button>
         <nav style={{height:open}}>
                     
                    <ul>
