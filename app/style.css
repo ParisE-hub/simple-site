@@ -95,6 +95,9 @@ nav{
 header button{
     display: block;
 }
+header{
+    border-style: none;
+}
 .banner{
     height: 700px;
     width: 100%;
