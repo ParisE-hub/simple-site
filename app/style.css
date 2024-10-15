@@ -7,7 +7,8 @@
     box-sizing: border-box;
 }
 body{
-    font-family: poppins;
+    font-family: cabin;
+    background-color: #e9e9e9;
 }
 header{
     display: flex;
@@ -61,7 +62,6 @@ nav ul li a:hover{
 .text{
     text-align: center;
     padding: 35px;
-    font-family: "Cabin";
 }
 .text h1{
     font-size: 30px;
@@ -77,10 +77,134 @@ header button{
     padding: 12px;
     border: 1px solid white;
 }
+.image-box{
+    display: flex;
+    padding: 25px;
+    margin-top: 15px;
+}
+.left-column{
+    width: 70%;
+    padding-right: 20px;
+}
+.right-column{
+    width: 30%;
+}
+.card-box{
+    background-color: white;
+    padding: 20px;
+}
+.card-box img{
+    width: 100%;
+}
+.card-heading{
+    text-align: center;
+    padding: 30px;
+}
+.card-heading h3{
+    margin-bottom: 12px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.card-heading p span{
+    color: #7c7c7c;
+}
+.card-box p{
+    margin-bottom: 10px;
+}
+.card-text{
+    margin-top: 20px;
+}
+.card-text p{
+   font-weight: lighter;
+}
+.button-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.button-row button{
+    background-color: black;
+    color: silver;
+    padding: 10px 20px;
+    border: 1px solid silver;
+}
+.button-row button:hover{
+    background-color: #7c7c7c;
+}
+.button-row span{
+    background-color: white;
+    color: black;
+    padding: 3px;
+}
+.button-row>:first-child{
+    background-color: white;
+    color: black;
+} 
+.card-box2 img{
+    width: 100%;
+    height: 200px;
+}
+.card-box2{
+    background-color: black;
+    color: white;
+    filter: grayscale(0.5);
+}
+.card-box2 h3{
+    padding: 15px;
+}
+.card-box2 p{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 1px;
+}
+.popular-column h3{
+    padding: 18px;
+    background-color: black;
+    color: white;
+    margin-top: 35px;
+}
+.first-row{
+    display: flex;
+   background-color: white;
+   border-bottom: 1px solid silver;
+   padding: 10px;
+}
+.first-row:hover{
+    background-color: silver;
+}
+.first-row img{
+    height: 60px;
+    padding: 5px;
+}
+.text-box{
+    padding: 8px;
+}
+.second-row{
+    display: flex;
+   background-color: white;
+   border-bottom: 1px solid silver;
+   padding: 10px;
+}
+.second-row:hover{
+    background-color: silver;
+}
+.second-row img{
+    height: 60px;
+    padding: 5px;
+    filter: sepia(2);
+}
+
+
+
+
+
 
 
 
 @media (max-width:560px) {
+    *{
+        overflow-x: hidden;
+    }
     header{
         display: flex;
     }
@@ -109,5 +233,18 @@ header h1{
 }
 .banner h1{
     padding: 20px;
+}
+.image-box{
+    display: block;
+}
+.left-column{
+    width: 100%;
+    padding-right: 5px;
+}
+.right-column{
+    width: 100%;
+}
+.card-box2{
+    margin-top: 20px;
 }
 }
