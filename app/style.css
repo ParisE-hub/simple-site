@@ -17,8 +17,11 @@ header{
     padding: 5px;
     color: white;
 }
-header h1{
+header a{
     font-size: 2em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 nav{
    transition: all 0.4s;
@@ -33,6 +36,7 @@ nav ul li a{
     padding: 15px;
     display: block;
     color: white;
+    font-size: 1.2em;
 }
 nav ul li a:hover{
     background-color: rgb(77, 158, 131);
